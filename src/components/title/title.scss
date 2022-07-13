@@ -1,0 +1,34 @@
+@import '../../style/variables.scss';
+
+.title {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .backspace {
+        margin-left: 10px;
+    }
+
+    .blue {
+        color: $blue-100;
+    }
+
+    .yellow {
+        color: $yellow-200;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 1rem;
+        }
+    }
+}

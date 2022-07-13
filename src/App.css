@@ -1,0 +1,115 @@
+.midContent {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+.midContent .highlight {
+	white-space: pre;
+	color: #f5a200;
+}
+
+.partner {
+	padding: 50px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.containerJobCategory {
+	display: flex;
+	justify-content: center;
+	background-color: #f9fcff;
+}
+.containerJobCategory .category {
+	display: flex;
+}
+
+.containerFeatureJob {
+	display: flex;
+	padding: 0 88px;
+}
+.containerFeatureJob .innerContainer {
+	width: 100%;
+}
+.containerFeatureJob .featureJob {
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	justify-content: space-between;
+}
+
+.containerFeatureJob .featureItem .detailArea {
+	display: flex;
+	align-items: flex-end;
+}
+.containerFeatureJob .featureItem .typeJobArea {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.containerSponsor {
+	display: flex;
+	justify-content: center;
+}
+.containerSponsor .title {
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+}
+.containerSponsor .title .highlight {
+	color: #00b9ef;
+}
+.containerSponsor .sponsors {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	justify-content: space-around;
+}
+.containerSponsor .sponsors img {
+	margin: 0 20px;
+}
+
+.containerFooter {
+	background-color: #02203a;
+}
+.containerFooter .companyInfo {
+	font-size: 12px;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	color: white;
+	padding: 32px;
+}
+.containerFooter .companyInfo .detailInfor {
+	display: grid;
+	grid-template-columns: 40% 10% 15% 10%;
+	justify-content: space-between;
+}
+.containerFooter .companyInfo .detailInfor .title {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.containerFooter .companyInfo .detailInfor p {
+	margin: 0;
+}
+.containerFooter .companyInfo .detailInfor .infor {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 8px;
+}
+.containerFooter .companyInfo .detailInfor .infor img {
+	margin-right: 5px;
+}
+
+.copyrightArea {
+	color: white;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	padding: 32px;
+}
+.copyrightArea p {
+	margin: 0;
+}
+.copyrightArea .socialNetwork {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}

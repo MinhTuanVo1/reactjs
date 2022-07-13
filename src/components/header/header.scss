@@ -1,0 +1,85 @@
+@import '../../style/variables.scss';
+
+.navbar {
+    height: 48px;
+    padding: 0px 88px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+    }
+
+    ul {
+        list-style-type: none;
+
+        .menu {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-left: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 820px) {
+        padding: 0 30px;
+
+        ul {
+            .menu {
+                position: absolute !important;
+                background-color: white;
+                right: 0;
+                left: 0;
+                text-align: center;
+                padding: 16px 0;
+                display: none;
+            }
+
+            .menu li+li {
+                margin-top: 12px;
+            }
+        }
+
+        input[type=checkbox]:checked~.menu {
+            display: block;
+            z-index: 1;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+
+    .active {
+        color: $blue-100;
+    }
+
+    .disable {
+        color: $gray-300;
+    }
+
+    .btn {
+        padding: 4px 14px;
+        background-color: $blue-100;
+        border-width: 0px;
+        color: white;
+        border-radius: 15px;
+    }
+
+    .language {
+        padding: 4px 11px;
+        background-color: white;
+        border: 1px solid $gray-300;
+        border-radius: 16px;
+    }
+}

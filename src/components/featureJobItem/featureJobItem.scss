@@ -1,0 +1,93 @@
+@import '../../style/variables.scss';
+
+.featureItem {
+    width: 100%;
+    padding: 16px 0;
+    display: grid;
+    margin-bottom: 10px;
+    grid-template-columns: 30% 60% 10%;
+    box-shadow: 0 0 24px rgba(0, 25, 54, 0.1);
+    border-radius: 8px;
+
+    .companyLogo {
+        border-radius: 10px;
+        margin: 0px 15px;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+        }
+
+        .featureTitle {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .companyName {
+            color: $gray-100;
+        }
+
+        .typeJob {
+            font-size: 10px;
+            margin-left: 10px;
+            padding: 6px 11px;
+            font-weight: bold;
+            background-color: $gray-200;
+            border-width: 0px;
+        }
+
+        .fullTime {
+            color: $red-100;
+        }
+
+        .partTime {
+            color: $yellow-200;
+        }
+    }
+
+    .detailArea {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .typeJobArea {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.moreJobs {
+    font-size: 24px;
+    padding-top: 36px;
+    background-color: $gray-300;
+    color: $blue-500;
+
+    .textInfor {
+        padding-left: 15px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    grid-template-columns: 90% 10% !important;
+
+    .numsMoreJob {
+        display: flex;
+    }
+
+    .highlight {
+        color: $blue-700;
+        font-weight: bold;
+    }
+}
+
+.backspace {
+    margin-left: 10px;
+}

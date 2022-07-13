@@ -1,0 +1,21 @@
+@import '../../style/variables.scss';
+
+.inputGroup {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        color: $blue-700;
+        font-weight: bold;
+    }
+
+    input {
+        border: 1px solid $gray-300;
+        border-radius: 4px;
+        padding: 6px 16px;
+        margin-top: 4px;
+        font-size: 14px;
+        color: $gray-100;
+    }
+}

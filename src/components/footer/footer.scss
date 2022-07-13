@@ -1,0 +1,85 @@
+@import '../../style/variables.scss';
+
+.containerFooter {
+    background-color: $blue-700;
+
+    .companyInfo {
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        color: white;
+        padding: 32px;
+
+
+        .detailInfor {
+            .title {
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+
+            display: grid;
+            grid-template-columns: 40% 10% 14% 10%;
+            justify-content: space-between;
+
+            p {
+                display: block;
+                margin: 0;
+            }
+
+            .infor {
+                display: flex;
+                align-items: flex-start;
+
+                img {
+                    margin-right: 5px;
+                }
+
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .companyInfo {
+            display: block;
+
+            .detailInfor {
+                display: block;
+            }
+
+            .logoFooter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.copyrightArea {
+    color: white;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 32px;
+    font-size: 10px;
+
+    p {
+        margin: 0;
+    }
+
+    .socialNetwork {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media (max-width: 600px) {
+        padding: 16px;
+        display: block;
+        text-align: center;
+
+        .socialNetwork {
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../style/variables.scss';
+
+.categoryItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px;
+    background-color: white;
+    padding: 16px 5px 16px 0px;
+    border-radius: 5px;
+}
+
+.categoryTitle {
+    border-left: 2px solid $blue-100;
+    font-weight: bold;
+    padding-left: 14px;
+    margin-right: 40px;
+}
+
+.numsPosition {
+    border-left: 1px solid $gray-300;
+    text-align: right;
+    width: 100px;
+}
