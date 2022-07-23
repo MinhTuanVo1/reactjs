@@ -7,7 +7,7 @@
 
     .formTitle {
         display: flex;
-        justify-content: flex-end;
+        justify-content: start;
     }
 
     .spacing {
@@ -85,7 +85,16 @@
     margin: 40px 0px;
     padding: 24px;
     width: 400px;
-    height: 660px;
     box-shadow: 0px 8px 24px rgba(0, 25, 54, 0.1);
     border-radius: 8px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.centerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

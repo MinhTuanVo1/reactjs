@@ -15,7 +15,9 @@ function Header() {
                         <li>Enterprise</li>
                         <li>Job</li>
                         <li>News</li>
-                        <li>Login</li>
+                        <li>
+                            <Link to='/sign-in'>Log In</Link>
+                        </li>
                         <li>
                             <Link to="/sign-up" className="btn">Sign up</Link>
                         </li>

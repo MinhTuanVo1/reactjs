@@ -19,6 +19,7 @@ const SignUpProvider: React.FC<Props> = ({ children }) => {
         isSubscribe: false,
         isAcceptTerm: false
     });
+    const [jwtToken, setJwtToken] = useState('');
 
     const submit = (value: ISignUp) => {
         setSignUp(signup => ({
@@ -31,7 +32,9 @@ const SignUpProvider: React.FC<Props> = ({ children }) => {
 
     const value: SignContextType = {
         signUp,
-        submit
+        submit,
+        jwtToken,
+        setJwtToken,
     }
 
     return <SignUpContext.Provider {...{ value, children }} />
